@@ -1,10 +1,11 @@
 html {
+    height: 100%;
     min-width: 480px;
 }
 body {
     font-family: sans-serif;
     background: linear-gradient(77deg, #222222, #291f38, #131313, #293c63,#2b5379 );
- 	    background-size: 400% 400%;
+ 	    background-size: 400% 500%;
 	    animation: gradient 30s ease infinite;
 	    height: 100vh;
 }
@@ -75,7 +76,12 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
-    
+    flex-wrap: wrap;
+    min-width: 720px;
+    margin: 0 auto;
+}
+
+.nav-buttons {
     border-radius: 10px;
     border-top: 5px solid #6B75D5;
     border-bottom: 5px solid #6B75D5;
@@ -90,7 +96,7 @@ nav {
     text-align: center;
     color: rgb(255, 255, 255);
     text-decoration: none;
-
+    margin: 0px 10px;
     padding: 4px 8px;
     border-radius: 10px;
     transition-duration: 0.4s;
