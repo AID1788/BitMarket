@@ -1,0 +1,219 @@
+html {
+    min-width: 480px;
+}
+body {
+    font-family: sans-serif;
+    background: linear-gradient(77deg, #222222, #291f38, #131313, #293c63,#2b5379 );
+ 	    background-size: 400% 400%;
+	    animation: gradient 30s ease infinite;
+	    height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    color: white;
+    background: linear-gradient(135deg, #6B75D5, #5694ce);
+    border-radius: 10px;
+}
+
+.header-button {
+    background: linear-gradient(135deg, #9ca2d6, #57aeff);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 28px;
+    font-family: Arial;
+    border-radius: 10px;
+    padding: 6px 12px;
+    margin: auto 10px auto 0px;
+    transition-duration: 0.4s;
+    animation: huerotate 5s alternate infinite;
+}
+
+@keyframes huerotate {
+    0% {
+        filter: hue-rotate(10deg)
+    }
+    25% {
+        filter: hue-rotate(25deg);
+    }
+    50% {
+        filter: hue-rotate(50deg);
+    }
+    100% {
+        filter: hue-rotate(10deg);
+    }
+}
+
+.header-button:hover {
+    background: linear-gradient(135deg, #6e78d3, #138dff);
+    box-shadow: 0 0 5px #4A56C4,
+            0 0 15px #303fc4,
+            0 0 35px #4147ff,
+            0 0 50px #323fff;
+}
+
+.header-img {
+    margin: 10px 0px 10px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    
+    border-radius: 10px;
+    border-top: 5px solid #6B75D5;
+    border-bottom: 5px solid #6B75D5;
+    background-color: rgb(29, 29, 29);
+    padding: 25px 100px 25px 95px;
+}
+
+.nav-link {
+    background: linear-gradient(135deg, #9ca2d6, #57aeff);
+    font-size: 24px;
+    min-width: 180px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+    padding: 4px 8px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    animation: huerotate1 5s alternate infinite;
+}
+
+@keyframes huerotate1 {
+    0% {
+        filter: hue-rotate(10deg)
+    }
+    25% {
+        filter: hue-rotate(-21deg);
+    }
+    50% {
+        filter: hue-rotate(20deg);
+    }
+    100% {
+        filter: hue-rotate(10deg);
+    }
+}
+
+.nav-link:hover {
+    background: linear-gradient(135deg, #6e78d3, #138dff);
+    box-shadow: 0 0 5px #4A56C4,
+            0 0 15px #303fc4,
+            0 0 35px #4147ff,
+            0 0 50px #7079ff;
+}
+
+.titleH1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    background: linear-gradient(-90deg, #6B75D5, #6094c4);
+    animation: huerotate1 5s alternate infinite;
+    border-radius: 10px;
+    width: 320px;
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    padding: 10px;
+    margin: 18px 0px 0px 0px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: auto;
+    min-width: 480px;
+    margin: 10px 50px 0px 50px;
+}
+
+article {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px 30px 20px;
+    width: 400px;
+    margin: 10px;
+}
+
+.article-p {
+    font-size: 24px;
+    margin: 20px 0px 38px 0px;
+}
+
+.article-but {
+    text-decoration: none;
+    background-color: rgb(213, 213, 213);
+    border-radius: 10px;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 75px;
+    transition-duration: 0.4s;
+}
+
+.article-but:hover {
+    background-color: #b0b8ff;
+    box-shadow: 0 0 5px #4A56C4,
+            0 0 12px #303fc4,
+            0 0 24px #4147ff,
+            0 0 36px #7079ff;
+}
+
+.phone-hand {
+    width: 100%;
+    border-radius:10px;
+    mix-blend-mode: lighten;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    color: white;
+    background: linear-gradient(135deg, #6B75D5, #80c2ff);
+    border-radius: 10px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    width: 420px;
+    margin: 10px;
+}
+
+.ftext {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(135deg, #6B75D5, #5b8ab6);
+    border-radius: 10px;
+    padding: 0px 30px;
+    margin: auto 10px auto 0px;
+    width: 360px;
+    min-width: 130px;
+    font-size: 24px;
+}
