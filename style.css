@@ -137,7 +137,7 @@ h1 {
     background: linear-gradient(-90deg, #6B75D5, #6094c4);
     animation: huerotate1 5s alternate infinite;
     border-radius: 10px;
-    width: 320px;
+    width: 685px;
     color: rgb(255, 255, 255);
     font-size: 36px;
     padding: 10px;
@@ -146,6 +146,7 @@ h1 {
 
 p {
     font-size: 24px;
+    padding-left: 10px;
 }
 
 .info {
@@ -155,6 +156,18 @@ p {
 
     min-width: 480px;
     margin: 10px auto;
+}
+
+.hit:hover {
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    box-shadow: 0 0 5px #c4814a,
+            0 0 15px #c4a230,
+            0 0 35px #ff4741,
+            0 0 50px #f1ff70;
+    transition-duration: 0.4s;
 }
 
 article {
@@ -206,20 +219,50 @@ footer {
 }
 
 .logos {
+    background: linear-gradient(135deg, #6B75D5, #6fa7db);
+    border-radius: 10px;
+    opacity: 1;
+    width: 80px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+
+.logos img{
     display: flex;
     justify-content: space-around;
-    width: 420px;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
     margin: 10px;
 }
 
-.ftext {
+.ftext p{
     display: flex;
     justify-content: space-around;
     background: linear-gradient(135deg, #6B75D5, #5b8ab6);
     border-radius: 10px;
-    padding: 0px 30px;
+    padding: 10px 30px;
     margin: auto 10px auto 0px;
-    width: 360px;
-    min-width: 130px;
-    font-size: 24px;
+    width: 20px;
+    font-size: 14px;
+}
+
+.promo {
+    position: fixed;
+    float: right;
+    top: 250px;
+}
+
+.hit {
+    position: relative;
+    width: 400px;
+    transition-duration: 0.4s;
+}
+
+.sale {
+    position: absolute;
+    width: 80px;
+    top: 20px;
+    left: 350px;
 }
